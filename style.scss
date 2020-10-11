@@ -114,8 +114,6 @@ button{
   width: 424px;
   max-width: 95vw;
   border-radius: 4px;
-  opacity:0;
-  animation: opacity .5s 2s forwards;
 
   button{
     background-color: $black;
@@ -135,10 +133,6 @@ button{
     font-size:10px;
     margin:24px 0 0;
   }
-}
-
-@keyframes opacity {
-  to {opacity:1}
 }
 
 h1 {

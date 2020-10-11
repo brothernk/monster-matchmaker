@@ -163,9 +163,6 @@ button:hover {
   width: 424px;
   max-width: 95vw;
   border-radius: 4px;
-  opacity: 0;
-  -webkit-animation: opacity .5s 2s forwards;
-          animation: opacity .5s 2s forwards;
 }
 
 #modal button {
@@ -185,18 +182,6 @@ button:hover {
 #modal .disclaimer {
   font-size: 10px;
   margin: 24px 0 0;
-}
-
-@-webkit-keyframes opacity {
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes opacity {
-  to {
-    opacity: 1;
-  }
 }
 
 h1 {
