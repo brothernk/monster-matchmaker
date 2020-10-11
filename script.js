@@ -3,91 +3,91 @@ const monsterList = [
   {
     name: 'Dr. Jekyll',
     value: '1',
-    image: '../../images/monster/dr-jekyll.jpg',
+    image: './images/monster/dr-jekyll.jpg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
   {
     name: 'The Space Kook',
     value: '1',
-    image: '../../images/monster/space-kook.png',
+    image: './images/monster/space-kook.png',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
   {
     name: 'The Witch',
     value: '1',
-    image: '../../images/monster/witch.png',
+    image: './images/monster/witch.png',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
   {
     name: 'The Snow Ghost',
     value: '2',
-    image: '../../images/monster/snow-ghost.png',
+    image: './images/monster/snow-ghost.png',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
   {
     name: 'Captain Cutler',
     value: '2',
-    image: '../../images/monster/captain-cutler.png',
+    image: './images/monster/captain-cutler.png',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
   {
     name: 'The Werewolf',
     value: '2',
-    image: '../../images/monster/werewolf.png',
+    image: './images/monster/werewolf.png',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
   {
     name: 'The Clown',
     value: '3',
-    image: '../../images/monster/clown.png',
+    image: './images/monster/clown.png',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
   {
     name: 'The Headless Specter',
     value: '3',
-    image: '../../images/monster/headless-specter.jpg',
+    image: './images/monster/headless-specter.jpg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
   {
     name: 'Charlie the Robot',
     value: '3',
-    image: '../../images/monster/robot.jpg',
+    image: './images/monster/robot.jpg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
   {
     name: 'Miner Forty-Niner',
     value: '4',
-    image: '../../images/monster/miner.jpg',
+    image: './images/monster/miner.jpg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
   {
     name: 'The Creeper',
     value: '4',
-    image: '../../images/monster/creeper.png',
+    image: './images/monster/creeper.png',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
   {
     name: 'The Zombie',
     value: '4',
-    image: '../../images/monster/zombie.png',
+    image: './images/monster/zombie.png',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
   {
     name: 'The Mummy of Ankha',
     value: '5',
-    image: '../../images/monster/mummy.png',
+    image: './images/monster/mummy.png',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
   {
     name: 'Captain Redbeard',
     value: '5',
-    image: '../../images/monster/redbeard.jpg',
+    image: './images/monster/redbeard.jpg',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
   {
     name: 'The Black Knight',
     value: '5',
-    image: '../../images/monster/black-knight.png',
+    image: './images/monster/black-knight.png',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse quis ultrices magna. Nam non vulputate enim.'
   },
 ];

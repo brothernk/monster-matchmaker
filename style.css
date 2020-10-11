@@ -71,64 +71,64 @@ body:before {
 }
 
 .monster.black-knight {
-  background-image: url("../../images/monster/black-knight.png");
+  background-image: url("./images/monster/black-knight.png");
 }
 
 .monster.captain-cutler {
-  background-image: url("../../images/monster/captain-cutler.png");
+  background-image: url("./images/monster/captain-cutler.png");
 }
 
 .monster.clown {
-  background-image: url("../../images/monster/clown.png");
+  background-image: url("./images/monster/clown.png");
 }
 
 .monster.creeper {
-  background-image: url("../../images/monster/creeper.png");
+  background-image: url("./images/monster/creeper.png");
 }
 
 .monster.dr-jekyll {
-  background-image: url("../../images/monster/dr-jekyll.jpg");
+  background-image: url("./images/monster/dr-jekyll.jpg");
 }
 
 .monster.headless-specter {
-  background-image: url("../../images/monster/headless-specter.jpg");
+  background-image: url("./images/monster/headless-specter.jpg");
 }
 
 .monster.miner {
-  background-image: url("../../images/monster/miner.jpg");
+  background-image: url("./images/monster/miner.jpg");
   background-position: top;
 }
 
 .monster.mummy {
-  background-image: url("../../images/monster/mummy.png");
+  background-image: url("./images/monster/mummy.png");
 }
 
 .monster.redbeard {
-  background-image: url("../../images/monster/redbeard.jpg");
+  background-image: url("./images/monster/redbeard.jpg");
 }
 
 .monster.robot {
-  background-image: url("../../images/monster/robot.jpg");
+  background-image: url("./images/monster/robot.jpg");
 }
 
 .monster.snow-ghost {
-  background-image: url("../../images/monster/snow-ghost.png");
+  background-image: url("./images/monster/snow-ghost.png");
 }
 
 .monster.space-kook {
-  background-image: url("../../images/monster/space-kook.png");
+  background-image: url("./images/monster/space-kook.png");
 }
 
 .monster.werewolf {
-  background-image: url("../../images/monster/werewolf.png");
+  background-image: url("./images/monster/werewolf.png");
 }
 
 .monster.witch {
-  background-image: url("../../images/monster/witch.png");
+  background-image: url("./images/monster/witch.png");
 }
 
 .monster.zombie {
-  background-image: url("../../images/monster/zombie.png");
+  background-image: url("./images/monster/zombie.png");
 }
 
 button {
@@ -264,106 +264,106 @@ label:hover:before {
 }
 
 .museum:before {
-  background-image: url("../../images/place/museum.jpg");
+  background-image: url("./images/place/museum.jpg");
 }
 
 .hike:before {
-  background-image: url("../../images/place/swamp.jpg");
+  background-image: url("./images/place/swamp.jpg");
   background-position: right;
 }
 
 .carnival:before {
-  background-image: url("../../images/place/carnival.jpg");
+  background-image: url("./images/place/carnival.jpg");
 }
 
 .home:before {
-  background-image: url("../../images/place/house.png");
+  background-image: url("./images/place/house.png");
 }
 
 .malt-shop:before {
-  background-image: url("../../images/place/malt-shop.jpg");
+  background-image: url("./images/place/malt-shop.jpg");
 }
 
 .plane:before {
-  background-image: url("../../images/transportation/plane.png");
+  background-image: url("./images/transportation/plane.png");
 }
 
 .snowmobile:before {
-  background-image: url("../../images/transportation/snowmobile.jpg");
+  background-image: url("./images/transportation/snowmobile.jpg");
 }
 
 .scooter:before {
-  background-image: url("../../images/transportation/scooter.jpg");
+  background-image: url("./images/transportation/scooter.jpg");
 }
 
 .mystery-machine:before {
-  background-image: url("../../images/transportation/mystery-machine.jpg");
+  background-image: url("./images/transportation/mystery-machine.jpg");
 }
 
 .ship:before {
-  background-image: url("../../images/transportation/ship.png");
+  background-image: url("./images/transportation/ship.png");
 }
 
 .ramen:before {
-  background-image: url("../../images/food/ramen.jpg");
+  background-image: url("./images/food/ramen.jpg");
   background-position: left;
 }
 
 .burger:before {
-  background-image: url("../../images/food/hamburger.gif");
+  background-image: url("./images/food/hamburger.gif");
 }
 
 .cotton-candy:before {
-  background-image: url("../../images/food/cotton-candy.jpg");
+  background-image: url("./images/food/cotton-candy.jpg");
 }
 
 .pizza:before {
-  background-image: url("../../images/food/pizza.jpg");
+  background-image: url("./images/food/pizza.jpg");
 }
 
 .chicken:before {
-  background-image: url("../../images/food/chicken.jpg");
+  background-image: url("./images/food/chicken.jpg");
 }
 
 .medicine:before {
-  background-image: url("../../images/item/medicine.png");
+  background-image: url("./images/item/medicine.png");
   background-position: left;
 }
 
 .arrow:before {
-  background-image: url("../../images/item/arrow.jpg");
+  background-image: url("./images/item/arrow.jpg");
 }
 
 .book:before {
-  background-image: url("../../images/item/book.jpg");
+  background-image: url("./images/item/book.jpg");
 }
 
 .pillow:before {
-  background-image: url("../../images/item/pillow.jpg");
+  background-image: url("./images/item/pillow.jpg");
 }
 
 .map:before {
-  background-image: url("../../images/item/map.jpeg");
+  background-image: url("./images/item/map.jpeg");
 }
 
 .daphne:before {
-  background-image: url("../../images/gang/daphne.jpg");
+  background-image: url("./images/gang/daphne.jpg");
 }
 
 .fred:before {
-  background-image: url("../../images/gang/fred.jpg");
+  background-image: url("./images/gang/fred.jpg");
 }
 
 .scooby:before {
-  background-image: url("../../images/gang/scooby.jpg");
+  background-image: url("./images/gang/scooby.jpg");
 }
 
 .shaggy:before {
-  background-image: url("../../images/gang/shaggy.jpg");
+  background-image: url("./images/gang/shaggy.jpg");
 }
 
 .velma:before {
-  background-image: url("../../images/gang/velma.jpg");
+  background-image: url("./images/gang/velma.jpg");
 }
 
 input[type="radio"] {

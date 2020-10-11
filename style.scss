@@ -67,21 +67,21 @@ body{
     margin:12px;
   }
 
-  &.black-knight{ background-image: url('../../images/monster/black-knight.png');}
-  &.captain-cutler{ background-image: url('../../images/monster/captain-cutler.png');}
-  &.clown{ background-image: url('../../images/monster/clown.png');}
-  &.creeper{ background-image: url('../../images/monster/creeper.png');}
-  &.dr-jekyll{ background-image: url('../../images/monster/dr-jekyll.jpg');}
-  &.headless-specter{ background-image: url('../../images/monster/headless-specter.jpg');}
-  &.miner{ background-image: url('../../images/monster/miner.jpg'); background-position: top;}
-  &.mummy{ background-image: url('../../images/monster/mummy.png');}
-  &.redbeard{ background-image: url('../../images/monster/redbeard.jpg');}
-  &.robot{ background-image: url('../../images/monster/robot.jpg');}
-  &.snow-ghost{ background-image: url('../../images/monster/snow-ghost.png');}
-  &.space-kook{ background-image: url('../../images/monster/space-kook.png');}
-  &.werewolf{ background-image: url('../../images/monster/werewolf.png');}
-  &.witch{ background-image: url('../../images/monster/witch.png');}
-  &.zombie{ background-image: url('../../images/monster/zombie.png');}
+  &.black-knight{ background-image: url('./images/monster/black-knight.png');}
+  &.captain-cutler{ background-image: url('./images/monster/captain-cutler.png');}
+  &.clown{ background-image: url('./images/monster/clown.png');}
+  &.creeper{ background-image: url('./images/monster/creeper.png');}
+  &.dr-jekyll{ background-image: url('./images/monster/dr-jekyll.jpg');}
+  &.headless-specter{ background-image: url('./images/monster/headless-specter.jpg');}
+  &.miner{ background-image: url('./images/monster/miner.jpg'); background-position: top;}
+  &.mummy{ background-image: url('./images/monster/mummy.png');}
+  &.redbeard{ background-image: url('./images/monster/redbeard.jpg');}
+  &.robot{ background-image: url('./images/monster/robot.jpg');}
+  &.snow-ghost{ background-image: url('./images/monster/snow-ghost.png');}
+  &.space-kook{ background-image: url('./images/monster/space-kook.png');}
+  &.werewolf{ background-image: url('./images/monster/werewolf.png');}
+  &.witch{ background-image: url('./images/monster/witch.png');}
+  &.zombie{ background-image: url('./images/monster/zombie.png');}
 }
 
 button{
@@ -200,35 +200,35 @@ label{
   }
 }
 
-.museum:before{ background-image: url('../../images/place/museum.jpg');}
-.hike:before{ background-image: url('../../images/place/swamp.jpg'); background-position: right;}
-.carnival:before{ background-image: url('../../images/place/carnival.jpg');}
-.home:before{ background-image: url('../../images/place/house.png');}
-.malt-shop:before{ background-image: url('../../images/place/malt-shop.jpg');}
+.museum:before{ background-image: url('./images/place/museum.jpg');}
+.hike:before{ background-image: url('./images/place/swamp.jpg'); background-position: right;}
+.carnival:before{ background-image: url('./images/place/carnival.jpg');}
+.home:before{ background-image: url('./images/place/house.png');}
+.malt-shop:before{ background-image: url('./images/place/malt-shop.jpg');}
 
-.plane:before{ background-image: url('../../images/transportation/plane.png');}
-.snowmobile:before{ background-image: url('../../images/transportation/snowmobile.jpg');}
-.scooter:before{ background-image: url('../../images/transportation/scooter.jpg');}
-.mystery-machine:before{ background-image: url('../../images/transportation/mystery-machine.jpg');}
-.ship:before{ background-image: url('../../images/transportation/ship.png');}
+.plane:before{ background-image: url('./images/transportation/plane.png');}
+.snowmobile:before{ background-image: url('./images/transportation/snowmobile.jpg');}
+.scooter:before{ background-image: url('./images/transportation/scooter.jpg');}
+.mystery-machine:before{ background-image: url('./images/transportation/mystery-machine.jpg');}
+.ship:before{ background-image: url('./images/transportation/ship.png');}
 
-.ramen:before{ background-image: url('../../images/food/ramen.jpg'); background-position: left;}
-.burger:before{ background-image: url('../../images/food/hamburger.gif');}
-.cotton-candy:before{ background-image: url('../../images/food/cotton-candy.jpg');}
-.pizza:before{ background-image: url('../../images/food/pizza.jpg');}
-.chicken:before{ background-image: url('../../images/food/chicken.jpg');}
+.ramen:before{ background-image: url('./images/food/ramen.jpg'); background-position: left;}
+.burger:before{ background-image: url('./images/food/hamburger.gif');}
+.cotton-candy:before{ background-image: url('./images/food/cotton-candy.jpg');}
+.pizza:before{ background-image: url('./images/food/pizza.jpg');}
+.chicken:before{ background-image: url('./images/food/chicken.jpg');}
 
-.medicine:before{ background-image: url('../../images/item/medicine.png'); background-position: left;}
-.arrow:before{ background-image: url('../../images/item/arrow.jpg');}
-.book:before{ background-image: url('../../images/item/book.jpg');}
-.pillow:before{ background-image: url('../../images/item/pillow.jpg');}
-.map:before{ background-image: url('../../images/item/map.jpeg');}
+.medicine:before{ background-image: url('./images/item/medicine.png'); background-position: left;}
+.arrow:before{ background-image: url('./images/item/arrow.jpg');}
+.book:before{ background-image: url('./images/item/book.jpg');}
+.pillow:before{ background-image: url('./images/item/pillow.jpg');}
+.map:before{ background-image: url('./images/item/map.jpeg');}
 
-.daphne:before{ background-image: url('../../images/gang/daphne.jpg');}
-.fred:before{ background-image: url('../../images/gang/fred.jpg');}
-.scooby:before{ background-image: url('../../images/gang/scooby.jpg');}
-.shaggy:before{ background-image: url('../../images/gang/shaggy.jpg');}
-.velma:before{ background-image: url('../../images/gang/velma.jpg');}
+.daphne:before{ background-image: url('./images/gang/daphne.jpg');}
+.fred:before{ background-image: url('./images/gang/fred.jpg');}
+.scooby:before{ background-image: url('./images/gang/scooby.jpg');}
+.shaggy:before{ background-image: url('./images/gang/shaggy.jpg');}
+.velma:before{ background-image: url('./images/gang/velma.jpg');}
 
 input[type="radio"] {
   display: none;
