@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap|Roboto+Condensed" rel="stylesheet">
+
+  <title>Monster Matchmaker | Kate Hemann</title>
+</head>
+
+<body>
+  <div class="content">
+    <div id="monsters">
+      <div class="monster dr-jekyll"></div>
+      <div class="monster space-kook"></div>
+      <div class="monster witch"></div>
+
+      <div class="monster snow-ghost"></div>
+      <div class="monster captain-cutler"></div>
+      <div class="monster werewolf"></div>
+
+      <div class="monster clown"></div>
+      <div class="monster headless-specter"></div>
+      <div class="monster robot"></div>
+
+      <div class="monster miner"></div>
+      <div class="monster creeper"></div>
+      <div class="monster zombie"></div>
+
+      <div class="monster mummy"></div>
+      <div class="monster redbeard"></div>
+      <div class="monster black-knight"></div>
+    </div>
+
+    <div id="modal">
+      <h1>Monster Matchmaker</h1>
+      <p>Find your perfect monster match!</p>
+      <p>You'll fill out a brief questionnaire, and we'll match you with potential
+        partners.</p>
+      <button id="start-btn">Get started</button>
+      <p class="disclaimer">I do not own the images and characters featured in this game. All rights belong to their
+        rightful owner(s). No copyright infringement intended.
+      </p>
+    </div>
+
+    <form id="form">
+      <div class="error-container" id="error-container--form">Please select an answer for each question</div>
+      <div class="question">
+        <h2>Where are you going on your first date?</h2>
+        <label class="museum" for="date" data-value="1">Science Museum</label>
+        <input type="radio" name="date" value="1">
+
+        <label class="hike" for="date" data-value="2">On a hike</label>
+        <input type="radio" name="date" value="2">
+
+        <label class="carnival" for="date" data-value="3">A carnival or fair</label>
+        <input type="radio" name="date" value="3">
+
+        <label class="home" for="date" data-value="4">Cozy night at home</label>
+        <input type="radio" name="date" value="4">
+
+        <label class="malt-shop" for="date" data-value="5">Local restaurant</label>
+        <input type="radio" name="date" value="5">
+      </div>
+      <div class="question">
+        <h2>How are you getting to your date?</h2>
+        <label class="plane" for="transport" data-value="1">By plane</label>
+        <input type="radio" name="transport" value="1">
+
+        <label class="snowmobile" for="transport" data-value="2">Snowmobiling</label>
+        <input type="radio" name="transport" value="2">
+
+        <label class="scooter" for="transport" data-value="3">A scooter</label>
+        <input type="radio" name="transport" value="3">
+
+        <label class="mystery-machine" for="transport" data-value="4">The Mystery Machine</label>
+        <input type="radio" name="transport" value="4">
+
+        <label class="ship" for="transport" data-value="5">By ship</label>
+        <input type="radio" name="transport" value="5">
+      </div>
+      <div class="question">
+        <h2>What are you eating?</h2>
+        <label class="ramen" for="food" data-value="1">Ramen</label>
+        <input type="radio" name="food" value="1">
+
+        <label class="burger" for="food" data-value="2">Veggie Burger</label>
+        <input type="radio" name="food" value="2">
+
+        <label class="cotton-candy" for="food" data-value="3">Cotton candy</label>
+        <input type="radio" name="food" value="3">
+
+        <label class="pizza" for="food" data-value="4">Pizza</label>
+        <input type="radio" name="food" value="4">
+
+        <label class="chicken" for="food" data-value="5">Chicken</label>
+        <input type="radio" name="food" value="5">
+      </div>
+      <div class="question">
+        <h2>Date icebreaker - what would you bring to a desert island?</h2>
+        <label class="medicine" for="island" data-value="1">Medicine</label>
+        <input type="radio" name="island" value="1">
+
+        <label class="arrow" for="island" data-value="2">Bow and arrows</label>
+        <input type="radio" name="island" value="2">
+
+        <label class="book" for="island" data-value="3">A book</label>
+        <input type="radio" name="island" value="3">
+
+        <label class="pillow" for="island" data-value="4">A pillow</label>
+        <input type="radio" name="island" value="4">
+
+        <label class="map" for="island" data-value="5">A map</label>
+        <input type="radio" name="island" value="5">
+      </div>
+      <div class="question">
+        <h2>Who are you calling to gossip with as soon as you get home?</h2>
+        <label class="daphne" for="friend" data-value="1">Daphne</label>
+        <input type="radio" name="friend" value="1">
+
+        <label class="fred" for="friend" data-value="2">Fred</label>
+        <input type="radio" name="friend" value="2">
+
+        <label class="scooby" for="friend" data-value="3">Scooby Doo</label>
+        <input type="radio" name="friend" value="3">
+
+        <label class="shaggy" for="friend" data-value="4">Shaggy</label>
+        <input type="radio" name="friend" value="4">
+
+        <label class="velma" for="friend" data-value="5">Velma</label>
+        <input type="radio" name="friend" value="5">
+      </div>
+      <button class="submit-btn" type="submit">Submit</button>
+    </form>
+
+    <div id="results">
+      <h1 class="header">Your best matches!</h1>
+      <div class="error-container" id="error-container--final">Please choose your favorite match</div>
+      <button id="next-btn">Next</button>
+    </div>
+  </div>
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

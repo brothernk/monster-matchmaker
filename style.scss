@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Roboto+Condensed&display=swap');
+
+// colors 
+$orange: #e87300;
+$black:#232536;
+$purple: #775293;
+$green: #ae9e18;
+$red: #c02621;
+
+$box-shadow:6px 6px 24px #141514;
+
+body{
+  background-color: $black;
+  color:$black;
+	text-align: center;
+	margin:0 auto;
+	padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 12px;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 100vh;
+
+  @media only screen and (min-width: 767px) {
+    padding: 24px;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    pointer-events: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity:.3;
+    z-index: -1;
+  }
+}
+
+/*Content ===================================================*/
+#monsters{
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.monster{
+  border-radius: 10px;
+  background: no-repeat center;
+  background-size: cover;
+  height: calc(20vh - 12px);
+  flex-basis: calc(33.33% - 8px);
+  margin:4px;
+  box-shadow:$box-shadow;
+
+  @media only screen and (min-width: 767px) {
+    flex-basis: calc(20% - 24px);
+    height: calc(33.33vh - 40px);
+    margin:12px;
+  }
+
+  &.black-knight{ background-image: url('../../images/monster/black-knight.png');}
+  &.captain-cutler{ background-image: url('../../images/monster/captain-cutler.png');}
+  &.clown{ background-image: url('../../images/monster/clown.png');}
+  &.creeper{ background-image: url('../../images/monster/creeper.png');}
+  &.dr-jekyll{ background-image: url('../../images/monster/dr-jekyll.jpg');}
+  &.headless-specter{ background-image: url('../../images/monster/headless-specter.jpg');}
+  &.miner{ background-image: url('../../images/monster/miner.jpg'); background-position: top;}
+  &.mummy{ background-image: url('../../images/monster/mummy.png');}
+  &.redbeard{ background-image: url('../../images/monster/redbeard.jpg');}
+  &.robot{ background-image: url('../../images/monster/robot.jpg');}
+  &.snow-ghost{ background-image: url('../../images/monster/snow-ghost.png');}
+  &.space-kook{ background-image: url('../../images/monster/space-kook.png');}
+  &.werewolf{ background-image: url('../../images/monster/werewolf.png');}
+  &.witch{ background-image: url('../../images/monster/witch.png');}
+  &.zombie{ background-image: url('../../images/monster/zombie.png');}
+}
+
+button{
+  border:0;
+  padding:12px;
+  border-radius: 4px;
+  font-family: "Fontdiner Swanky", cursive;
+  text-transform: capitalize;
+  min-width: 200px;
+  letter-spacing: 1px;
+  margin: 24px 0 0;
+  cursor: pointer;
+  transition: .15s;
+  background-color: $green;
+  color:$black;
+
+  &:hover{
+    background-color: $black;
+    color: $green;
+  }
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e87300;
+  padding: 12px 24px;
+  width: 424px;
+  max-width: 95vw;
+  border-radius: 4px;
+  opacity:0;
+  animation: opacity .5s 2s forwards;
+
+  button{
+    background-color: $black;
+    color:$green;
+
+    &:hover{
+      background-color: #ae9e18;
+      color: #232536;
+    }
+  }
+
+  p{
+    margin:4px auto;
+  }
+
+  .disclaimer{
+    font-size:10px;
+    margin:24px 0 0;
+  }
+}
+
+@keyframes opacity {
+  to {opacity:1}
+}
+
+h1 {
+  font-family: "Fontdiner Swanky", cursive;
+}
+
+form{
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: $purple;
+  padding:24px;
+  display: none;
+}
+
+.question{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom:24px;
+
+  h2{
+    width:100%;
+  }
+}
+
+label{
+  margin:0 4px;
+  cursor: pointer;
+  width:calc(20% - 8px);
+
+  &.selected{
+    &:before{
+      border-color: $orange;
+    }
+
+    &:hover{
+      &:before{
+        border-color: $orange;
+      }
+    }
+  }
+
+  &:before{
+    content:'';
+    height: 200px;
+    display:block;
+    background:no-repeat center;
+    background-size: cover;
+    margin-bottom:8px;
+    border:3px solid transparent;
+  }
+
+  &:hover{
+    &:before{
+      border-color:$green;
+    }
+  }
+}
+
+.museum:before{ background-image: url('../../images/place/museum.jpg');}
+.hike:before{ background-image: url('../../images/place/swamp.jpg'); background-position: right;}
+.carnival:before{ background-image: url('../../images/place/carnival.jpg');}
+.home:before{ background-image: url('../../images/place/house.png');}
+.malt-shop:before{ background-image: url('../../images/place/malt-shop.jpg');}
+
+.plane:before{ background-image: url('../../images/transportation/plane.png');}
+.snowmobile:before{ background-image: url('../../images/transportation/snowmobile.jpg');}
+.scooter:before{ background-image: url('../../images/transportation/scooter.jpg');}
+.mystery-machine:before{ background-image: url('../../images/transportation/mystery-machine.jpg');}
+.ship:before{ background-image: url('../../images/transportation/ship.png');}
+
+.ramen:before{ background-image: url('../../images/food/ramen.jpg'); background-position: left;}
+.burger:before{ background-image: url('../../images/food/hamburger.gif');}
+.cotton-candy:before{ background-image: url('../../images/food/cotton-candy.jpg');}
+.pizza:before{ background-image: url('../../images/food/pizza.jpg');}
+.chicken:before{ background-image: url('../../images/food/chicken.jpg');}
+
+.medicine:before{ background-image: url('../../images/item/medicine.png'); background-position: left;}
+.arrow:before{ background-image: url('../../images/item/arrow.jpg');}
+.book:before{ background-image: url('../../images/item/book.jpg');}
+.pillow:before{ background-image: url('../../images/item/pillow.jpg');}
+.map:before{ background-image: url('../../images/item/map.jpeg');}
+
+.daphne:before{ background-image: url('../../images/gang/daphne.jpg');}
+.fred:before{ background-image: url('../../images/gang/fred.jpg');}
+.scooby:before{ background-image: url('../../images/gang/scooby.jpg');}
+.shaggy:before{ background-image: url('../../images/gang/shaggy.jpg');}
+.velma:before{ background-image: url('../../images/gang/velma.jpg');}
+
+input[type="radio"] {
+  display: none;
+}
+
+#results{
+  display:none;
+
+  h1{
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+    letter-spacing: 3px;
+    margin-top: 0;
+    color:$orange;
+  }
+
+  button{
+    display:block;
+    position: absolute;
+    bottom: 24px;
+    left: 50%;
+    transform: translate(-50%,0);
+
+    &:hover{
+      background-color: $orange;
+      color:$black;
+    }
+  }
+}
+
+.monster-match{
+  border-radius: 10px;
+  background: no-repeat center;
+  background-size: cover;
+  background-position: top;
+  display:inline-block;
+  width: calc(33.33% - 16px);
+  box-shadow: $box-shadow;
+  height:50vh;
+  position: relative;
+  cursor: pointer;
+
+  &.selected-monster{
+    border: 3px solid $orange;
+    transform: scale(1.05);
+    z-index: 1;
+    transition: transform .25s;
+
+    .overlay{
+      display:flex;
+    }
+  }
+  
+  .overlay {
+    position: absolute;
+    background: rgba(1,1,1, .5);
+    height: 100%;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    padding: 0 20px;
+    line-height: 1.5;
+    display:none;
+    transition: .15s;
+    width:100%;
+  }
+
+  &:hover{
+    .overlay{
+      display:flex;
+    }
+  }
+
+  &:nth-of-type(3) {
+    margin: 0 24px;
+  }
+
+  p {
+    position: absolute;
+    top: 100%;
+    color: #ffffff;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 24px;
+  }
+
+  &.error{
+    border:3px solid $red;
+  }
+}
+
+.error-container{
+  color: #ffffff;
+  background: #c02621;
+  padding: 10px 24px;
+  border-radius: 4px;
+  display: none;
+
+  &#error-container--final{
+    max-width: 340px;
+    margin: 0 auto 32px;
+  }
+}
+
+.error{
+  h2{
+    &:after{
+      content:'*';
+      color:$red;
+    }
+  }
+  
+  label{
+    &:before{
+      border: 3px solid $red;
+    }
+  }
+}
+
+.final-match {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+
+  .match-image{
+    max-width: 33.33vw;
+    height: calc(100vh - 48px);
+    width: auto;
+    background-position: center;
+    border-radius: 4px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: $box-shadow;
+  }
+
+  .date-description{
+    color: #ffffff;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  #redo-btn{
+    &:hover{
+      background: $orange;
+      color:$black;
+    }
+  }
+}
