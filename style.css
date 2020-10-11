@@ -200,8 +200,14 @@ form {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #775293;
-  padding: 24px;
+  padding: 12px 8px 24px;
   display: none;
+}
+
+@media only screen and (min-width: 767px) {
+  form {
+    padding: 24px;
+  }
 }
 
 .question {
@@ -221,9 +227,16 @@ form {
 }
 
 label {
-  margin: 0 4px;
+  margin: 12px 4px;
   cursor: pointer;
-  width: calc(20% - 8px);
+  width: calc(50% - 8px);
+}
+
+@media only screen and (min-width: 767px) {
+  label {
+    width: calc(20% - 8px);
+    margin: 0 4px;
+  }
 }
 
 label.selected:before {
@@ -291,7 +304,12 @@ label:hover:before {
 
 .ramen:before {
   background-image: url("./images/food/ramen.jpg");
-  background-position: left;
+}
+
+@media only screen and (min-width: 767px) {
+  .ramen:before {
+    background-position: left;
+  }
 }
 
 .burger:before {
@@ -300,6 +318,7 @@ label:hover:before {
 
 .cotton-candy:before {
   background-image: url("./images/food/cotton-candy.jpg");
+  background-position: left;
 }
 
 .pizza:before {
@@ -357,6 +376,13 @@ input[type="radio"] {
 
 #results {
   display: none;
+  padding-bottom: 140px;
+}
+
+@media only screen and (min-width: 767px) {
+  #results {
+    padding-bottom: 0;
+  }
 }
 
 #results h1 {
@@ -370,16 +396,25 @@ input[type="radio"] {
 
 #results button {
   display: block;
-  position: absolute;
+  position: fixed;
   bottom: 24px;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  z-index: 5;
+  -webkit-box-shadow: 6px 6px 24px #141514;
+          box-shadow: 6px 6px 24px #141514;
 }
 
 #results button:hover {
   background-color: #e87300;
   color: #232536;
+}
+
+@media only screen and (min-width: 767px) {
+  #results {
+    position: absolute;
+  }
 }
 
 .monster-match {
@@ -388,12 +423,18 @@ input[type="radio"] {
   background-size: cover;
   background-position: top;
   display: inline-block;
-  width: calc(33.33% - 16px);
+  width: 100%;
   -webkit-box-shadow: 6px 6px 24px #141514;
           box-shadow: 6px 6px 24px #141514;
   height: 50vh;
   position: relative;
   cursor: pointer;
+}
+
+@media only screen and (min-width: 767px) {
+  .monster-match {
+    width: calc(33.33% - 16px);
+  }
 }
 
 .monster-match.selected-monster {
@@ -437,7 +478,13 @@ input[type="radio"] {
 }
 
 .monster-match:nth-of-type(3) {
-  margin: 0 24px;
+  margin: 80px 0;
+}
+
+@media only screen and (min-width: 767px) {
+  .monster-match:nth-of-type(3) {
+    margin: 0 24px;
+  }
 }
 
 .monster-match p {
@@ -477,18 +524,21 @@ input[type="radio"] {
 }
 
 .final-match {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 2fr;
-      grid-template-columns: 1fr 2fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+@media only screen and (min-width: 767px) {
+  .final-match {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+  }
+}
+
 .final-match .match-image {
-  max-width: 33.33vw;
-  height: calc(100vh - 48px);
   width: auto;
   background-position: center;
   border-radius: 4px;
@@ -496,6 +546,16 @@ input[type="radio"] {
   background-repeat: no-repeat;
   -webkit-box-shadow: 6px 6px 24px #141514;
           box-shadow: 6px 6px 24px #141514;
+  height: 50vh;
+  margin-bottom: 24px;
+}
+
+@media only screen and (min-width: 767px) {
+  .final-match .match-image {
+    max-width: 33.33vw;
+    height: calc(100vh - 48px);
+    margin-bottom: 0;
+  }
 }
 
 .final-match .date-description {

@@ -145,8 +145,12 @@ form{
   display: flex;
   flex-direction: column;
   background-color: $purple;
-  padding:24px;
+  padding: 12px 8px 24px;
   display: none;
+
+  @media only screen and (min-width: 767px) {
+    padding:24px;
+  }
 }
 
 .question{
@@ -161,10 +165,15 @@ form{
 }
 
 label{
-  margin:0 4px;
+  margin:12px 4px;
   cursor: pointer;
-  width:calc(20% - 8px);
+  width:calc(50% - 8px);
 
+  @media only screen and (min-width: 767px) {
+    width:calc(20% - 8px);
+    margin:0 4px;
+  }
+  
   &.selected{
     &:before{
       border-color: $orange;
@@ -206,9 +215,15 @@ label{
 .mystery-machine:before{ background-image: url('./images/transportation/mystery-machine.jpg');}
 .ship:before{ background-image: url('./images/transportation/ship.png');}
 
-.ramen:before{ background-image: url('./images/food/ramen.jpg'); background-position: left;}
+.ramen:before{ 
+  background-image: url('./images/food/ramen.jpg'); 
+
+  @media only screen and (min-width: 767px) {
+    background-position: left;
+  }
+}
 .burger:before{ background-image: url('./images/food/hamburger.gif');}
-.cotton-candy:before{ background-image: url('./images/food/cotton-candy.jpg');}
+.cotton-candy:before{ background-image: url('./images/food/cotton-candy.jpg'); background-position: left;}
 .pizza:before{ background-image: url('./images/food/pizza.jpg');}
 .chicken:before{ background-image: url('./images/food/chicken.jpg');}
 
@@ -230,6 +245,11 @@ input[type="radio"] {
 
 #results{
   display:none;
+  padding-bottom: 140px;
+
+  @media only screen and (min-width: 767px) {
+    padding-bottom: 0;
+  }
 
   h1{
     font-size: 32px;
@@ -242,15 +262,21 @@ input[type="radio"] {
 
   button{
     display:block;
-    position: absolute;
+    position: fixed;
     bottom: 24px;
     left: 50%;
     transform: translate(-50%,0);
+    z-index: 5;
+    box-shadow: $box-shadow;
 
     &:hover{
       background-color: $orange;
       color:$black;
     }
+  }
+
+  @media only screen and (min-width: 767px) {
+    position: absolute;
   }
 }
 
@@ -260,11 +286,15 @@ input[type="radio"] {
   background-size: cover;
   background-position: top;
   display:inline-block;
-  width: calc(33.33% - 16px);
+  width:100%;
   box-shadow: $box-shadow;
   height:50vh;
   position: relative;
   cursor: pointer;
+
+  @media only screen and (min-width: 767px) {
+    width: calc(33.33% - 16px);
+  }
 
   &.selected-monster{
     border: 3px solid $orange;
@@ -298,7 +328,11 @@ input[type="radio"] {
   }
 
   &:nth-of-type(3) {
-    margin: 0 24px;
+    margin:80px 0;
+
+    @media only screen and (min-width: 767px) {
+      margin: 0 24px;
+    }
   }
 
   p {
@@ -344,19 +378,28 @@ input[type="radio"] {
 }
 
 .final-match {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
   align-items: center;
 
+  @media only screen and (min-width: 767px) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
   .match-image{
-    max-width: 33.33vw;
-    height: calc(100vh - 48px);
     width: auto;
     background-position: center;
     border-radius: 4px;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: $box-shadow;
+    height: 50vh;
+    margin-bottom: 24px;
+
+    @media only screen and (min-width: 767px) {
+      max-width: 33.33vw;
+      height: calc(100vh - 48px);
+      margin-bottom: 0;
+    }
   }
 
   .date-description{
