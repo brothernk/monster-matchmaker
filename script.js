@@ -218,7 +218,7 @@ function addCompleteInfo () {
   for (let i = 0; i < monsterMatches.length; i++) {
     if (monsterMatches[i].image === document.querySelector('.selected-monster').style.backgroundImage.split('url("')[1].split('")')[0]){
       const finalMatch = document.createElement("div");
-      finalMatch.innerHTML = `<div style="background-image: url(${monsterMatches[i].image}" class="match-image"></div><div><p class="date-description">Have fun on your date with ${monsterMatches[i].name}! We know you'll have a great time ${dateLocation}, but if you're feeling a little unsure, go ahead and take the quiz again</p><button id="redo-btn">Start over</button></div>`;
+      finalMatch.innerHTML = `<div style="background-image: url(${monsterMatches[i].image}" class="match-image"></div><div><p class="date-description">Have fun on your date with ${monsterMatches[i].name}! We know you'll have a great time ${dateLocation}, but if you're feeling a little unsure, go ahead and take the quiz again.</p><button id="redo-btn">Start over</button></div>`;
       finalMatch.setAttribute('class','final-match');
   
       document.body.appendChild(finalMatch);
